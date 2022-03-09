@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PruebaT</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__titulo"> Restaurante José - 何塞 </h1>
+      <nav class="header__nav">
+        <ul class="header__lista">
+          <li class="header__item header__item--incio"><a href="#">Inicio</a></li>
+          <li class="header__item header__item--recetas"><a href="#">Nuestros platos</a>
+          </li>
+          <li class="header__item header__item--App"><a href="#">App</a></li>
+          </li>
+          <li class="header__item header__item--About"><a href="#">Sobre nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main class="main">
+      <h2 class="main__platillos">Platillos</h2>
+      <div class="main__opciones">
+        <div class="main__busqueda">
+          <h3>Platillo</h3>
+          <input type="text" placeholder="Introduzca el nombre del platillo">
+          <button class="button button--buscar">Buscar</button>
+        </div>
+        <div class="main__filtro">
+          <h3>Numero de ingredientes</h3>
+          <input type="text" placeholder="Numero de ingredientes">
+          <button class="button button--buscar">Buscar</button>
+        </div>
+        <div class="main__precio">
+          <h3>Precio</h3>
+          <input type="text" placeholder="$">
+          <button class="button button--buscar">Buscar</button>
+        </div>
+      </div>
+  
+  
+      <table border="1" class="main__tabla" id="tabla">
+        <tr>
+          <th class="main__tabla--title">Platillo</th>
+          <th class="main__tabla--title">Ingredientes</th>
+          <th class="main__tabla--title">Precio</th>
+          <th class="main__tabla--title main__tabla--fix">Modificar</th>
+        </tr>
+        <tr>
+          <td class="main__tabla--content">Platillo 1</td>
+          <td class="main__tabla--content"> Ingrediente 1 <br>
+            Ingrediente 2 <br>
+            Ingrediente 3
+          </td>
+          <td class="main__tabla--content">$50.000</td>
+          <td class="main__tabla--content">
+            <button class="button button--eliminar">Eliminar</button>
+            <button class="button button--modificar">Modificar</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="main__tabla--content">Platillo 2</td>
+          <td class="main__tabla--content">Ingrediente 1 <br>
+            Ingrediente 2 </td>
+  
+          <td class="main__tabla--content">$50.000</td>
+          <td class="main__tabla--content">
+            <button class="button button--eliminar">Eliminar</button>
+            <button class="button button--modificar">Modificar</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="main__tabla--content">Platillo 3</td>
+          <td class="main__tabla--content">Ingrediente 1 <br>
+            Ingrediente 2 </td>
+          <td class="main__tabla--content">$50.000</td>
+          <td class="main__tabla--content">
+            <button class="button button--eliminar">Eliminar</button>
+            <button class="button button--modificar">Modificar</button>
+          </td>
+        </tr>
+      </table>
+  
+      <button class="button button--añadir" onclick="agregarFila()">Añadir</button>
+  
+     
+  
+    </main>
+  
+    
+  
+  </body>
+</html>
+
+<script src="scripts/main.js"></script>
